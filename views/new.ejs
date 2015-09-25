@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>ToEat.ly!</title>
+</head>
+<body>
+	
+	<form action="/foods" method="post" id="new-food">
+		<input type="text" name="food-name" id="food-name" autofocus placeholder="food name">
+		<select name="yumminess rating" id="food-yum">
+			<option value="Default">--How yummy is it?--</option>
+			<option value="1">Gross</option>
+			<option value="2">I'd eat it to stay alive</option>
+			<option value="3">Meh</option>
+			<option value="4">Pretty good</option>
+			<option value="5">Delicious</option>
+		</select>
+		<input type="submit" value="Add my food">
+	</form>
+
+	<a href="/foods">Home</a>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/jq.js"></script>
+</body>
+</html>
